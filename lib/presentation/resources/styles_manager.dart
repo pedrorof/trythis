@@ -1,19 +1,51 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
-import 'package:trythis/presentation/resources/font_manager.dart';
+import 'font_manager.dart';
 
-TextStyle _getTexStyle(double fontSize, String fontFamily, FontWeight fontWeight, Color color){
-  return TextStyle(fontSize: fontSize, fontFamily: fontFamily, color: color, fontWeight: fontWeight);
+TextStyle _getTextStyle(
+    double fontSize, String fontFamily, FontWeight fontWeight, Color color) {
+  return TextStyle(
+      fontSize: fontSize,
+      fontFamily: fontFamily,
+      color: color,
+      fontWeight: fontWeight);
 }
-TextStyle getRegularStyle({double fontSize = FontSizeManager.s12, required Color color}){
-  return _getTexStyle(fontSize, FontConstants.fontFamily,  FontWeightManager.regular,color);
-  
-}TextStyle getLightStyle({double fontSize = FontSizeManager.s12, required Color color}){
-  return _getTexStyle(fontSize, FontConstants.fontFamily,  FontWeightManager.light,color);
+
+// regular style
+
+TextStyle getRegularStyle(
+    {double fontSize = FontSizeManager.s12, required Color color}) {
+  return _getTextStyle(
+      fontSize, FontConstants.fontFamily, FontWeightManager.regular, color);
 }
-TextStyle getBoldStyle({double fontSize = FontSizeManager.s12, required Color color}){
-  return _getTexStyle(fontSize, FontConstants.fontFamily,  FontWeightManager.bold,color);
+// light text style
+
+TextStyle getLightStyle(
+    {double fontSize = FontSizeManager.s12, required Color color}) {
+  return _getTextStyle(
+      fontSize, FontConstants.fontFamily, FontWeightManager.light, color);
 }
-TextStyle getSemiBoldStyle({double fontSize = FontSizeManager.s12, required Color color}){
-  return _getTexStyle(fontSize, FontConstants.fontFamily,  FontWeightManager.semiBold,color);
+// bold text style
+
+TextStyle getBoldStyle(
+    {double fontSize = FontSizeManager.s12, required Color color}) {
+  return _getTextStyle(
+      fontSize, FontConstants.fontFamily, FontWeightManager.bold, color);
+}
+
+// semi bold text style
+
+TextStyle getSemiBoldStyle(
+    {double fontSize = FontSizeManager.s12, required Color color}) {
+  return _getTextStyle(
+      fontSize, FontConstants.fontFamily, FontWeightManager.semiBold, color);
+}
+
+
+// medium text style
+
+TextStyle getMediumStyle(
+    {double fontSize = FontSizeManager.s12, required Color color}) {
+  return _getTextStyle(
+      fontSize, FontConstants.fontFamily, FontWeightManager.medium, color);
 }

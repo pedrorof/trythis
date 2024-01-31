@@ -1,0 +1,10 @@
+{
+  "default_error": "Atenção!",
+  "no_route_found": "Rota não encontrada",
+  "no_internet_error": "Sem conexão com a internet",
+  "timeout_error": "Tempo de conexão esgotado",
+  "bad_request_error": "Requisição inválida",
+  "internal_server_error": "Erro interno do servidor",
+  "unauthorized_error": "Não autorizado",
+  "precondition_failed_error": "Os parâmetros informados estão incorretos"
+}

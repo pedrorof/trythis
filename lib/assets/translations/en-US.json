@@ -1,0 +1,11 @@
+{
+  "default_error": "Attention!",
+  "no_route_found": "No route found",
+  "no_internet_error": "No internet connection",
+  "timeout_error": "Request timed out",
+  "bad_request_error": "Bad request",
+  "internal_server_error": "Internal server error",
+  "unauthorized_error": "Unauthorized",
+  "precondition_failed_error": "The parameters entered are incorrect"
+}
+
